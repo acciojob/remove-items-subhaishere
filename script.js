@@ -1,9 +1,7 @@
 //your JS code here. If required.
-function removeSelectedColor() {
-    var colorSelect = document.getElementById("colorSelect");
-    var selectedIndex = colorSelect.selectedIndex;
+let removeBtn = document.getElementById("removeBtn");
+let select = document.getElementById("colorSelect");
 
-    if (selectedIndex !== -1) { // Check if an option is selected
-        colorSelect.remove(selectedIndex);
-    }
+function removeOption(){
+	select.remove(select.selectedIndex);
 }
